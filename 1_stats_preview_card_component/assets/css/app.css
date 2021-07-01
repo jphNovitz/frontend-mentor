@@ -72,6 +72,10 @@ body {
 }
 
 
+#content{
+    margin: 0 1.3rem;
+}
+
 h1 {
     font-family: 'Inter', sans-serif;
     color: var(--main-heading-white);
@@ -126,8 +130,36 @@ ul.stat li p {
 @media screen and (min-width: 1440px) {
 
     #container {
+        flex-direction: row-reverse;
         width: 1440px;
         max-width: 1440px;
+    }
+
+    .image{
+        flex-direction: column;
+        display: flex;
+        align-self: stretch;
+    }
+
+    .image img{
+        height: 100%;
+        width: initial;
+    }
+
+    #content{
+        margin: 0 6rem;
+    }
+    ul.stat {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h1, p,
+    ul.stat li h2,
+    ul.stat li p {
+        margin-left: 0;
+        padding: 0;
+        text-align: left;
     }
 
 }
