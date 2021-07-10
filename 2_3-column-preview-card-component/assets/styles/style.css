@@ -88,8 +88,8 @@ h2{
     background-color: var(--very-light-gray);
     border: solid 1px var(--very-light-gray);
     padding: 1rem 2rem;
-    margin: auto;
     display: inline-flex;
+    width: max-content;
     flex: 0;
     font-size: 1rem;
     text-decoration: none;
